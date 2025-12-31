@@ -49,7 +49,6 @@ Automatic-College-Timetable-Generator/
 
 Clone the repository
 
-git clone https://github.com/paruchuruvyshnavi87-glitch/REPO_NAME.git
 
 
 Navigate to the project folder
