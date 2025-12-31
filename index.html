@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Automatic College Timetable Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 class="title">AUTOMATIC COLLEGE TIMETABLE GENERATOR</h2>
+
+<label>Branch:</label>
+<select id="branch">
+  <option value="ECE">ECE</option>
+  <option value="CSE">CSE</option>
+  <option value="EEE">EEE</option>
+  <option value="MECH">MECH</option>
+  <option value="CIVIL">CIVIL</option>
+</select>
+
+<label>Periods / Day:</label>
+<input type="number" id="periods" min="4" max="8">
+
+<br><br>
+
+<button onclick="generateTimetable()">Generate Timetable</button>
+<button onclick="enableAdmin()">Admin Edit Mode</button>
+<button onclick="downloadPDF()">Download PDF</button>
+
+<table id="timetable">
+  <thead>
+    <tr id="headerRow">
+      <th>DAY</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<div class="bottom">
+
+  <!-- Timings Table -->
+  <table>
+    <tr><th colspan="2">TIMINGS</th></tr>
+    <tr><td>P1</td><td>09:00 - 10:00</td></tr>
+    <tr><td>P2</td><td>10:00 - 11:00</td></tr>
+    <tr><td>BREAK</td><td>11:00 - 11:10</td></tr>
+    <tr><td>P3</td><td>11:10 - 12:10</td></tr>
+    <tr><td>LUNCH</td><td>12:10 - 01:20</td></tr>
+    <tr><td>P4</td><td>01:20 - 02:20</td></tr>
+    <tr><td>P5</td><td>02:20 - 03:20</td></tr>
+    <tr><td>BREAK</td><td>03:20 - 03:30</td></tr>
+    <tr><td>P6</td><td>03:30 - 04:30</td></tr>
+  </table>
+
+  <!-- Faculty Table -->
+  <table id="facultyTable">
+    <tr><th>SUBJECT</th><th>FACULTY NAME</th></tr>
+  </table>
+
+  <!-- Subject Full Form Table -->
+  <table id="subjectTable">
+    <tr><th>SUBJECT</th><th>FULL FORM</th></tr>
+  </table>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

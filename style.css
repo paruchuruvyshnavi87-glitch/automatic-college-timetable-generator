@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.title {
+  background: #f4c430;
+  padding: 10px;
+}
+
+select, input, button {
+  padding: 8px;
+  margin: 8px;
+}
+
+button {
+  background: #2e86de;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 95%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+th {
+  background: #2c3e50;
+  color: white;
+}
+
+.lab {
+  background: #f9e79f;
+  font-weight: bold;
+}
+
+.editable {
+  background: #e8f8f5;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#facultyTable, #subjectTable {
+  min-width: 320px;
+}
